@@ -25,11 +25,8 @@ brew install postgresql@15
 ```sql
 CREATE DATABASE traineejava;
 ```
-### Шаг 3
-- Включить зависимости: Spring Web, Spring Data JPA, PostgreSQL Driver, Lombok, Hibernate Validator.
-- Импортировать проект в вашу IDE (например, IntelliJ IDEA).
 
-### Шаг 4
+### Шаг 3
 
 - Настроить подключение базы данных к проекту в файлe '_application.properties_' .
 
@@ -54,13 +51,13 @@ spring.mvc.view.suffix=.html
 spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 ```
 
-### Шаг 5
+### Шаг 4
 
 - Проверить подключение БД к проекту DataBase -> Properties -> Test Connection
 
 Если Succeeded, значит БД подключена правильно.![](https://github.com/Sanyajo/PropertyRental-TraineeJava-/blob/main/ImgForReadme/DataBaseConnectedTest.png)
 
-### Шаг 6
+### Шаг 5
 
 - Создание таблиц в БД (Используется связь " Один к многим")
 -  Таблица "landlord" хранит информацию об арендодателях
@@ -107,7 +104,7 @@ ALTER TABLE IF EXISTS public.property
 - ![Схема таблиц базы данных](https://github.com/Sanyajo/PropertyRental-TraineeJava-/blob/main/ImgForReadme/DatabaseDependencies.png) 
 
 
-### Шаг 7 (Проверка БД)
+### Шаг 6 (Проверка БД)
 
 - Добавление записи в бд (Используем Postman)
 ```
