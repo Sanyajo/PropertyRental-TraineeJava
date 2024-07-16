@@ -1,15 +1,19 @@
 package PropertyRental.TraineeJava.Service;
 
+import PropertyRental.TraineeJava.Dto.PropertyDto;
 
-import PropertyRental.TraineeJava.Repository.PropertyRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-@Service
-@RequiredArgsConstructor
-@Slf4j
-public class PropertyService {
+public interface PropertyService {
+    PropertyDto createProperty(PropertyDto propertyDto);
 
-    private final PropertyRepository propertyRepository;
+    PropertyDto getPropertyById(Long id);
+
+    List<PropertyDto> getAllProperty ();
+
+    PropertyDto updateProperty(Long id, PropertyDto propertyDto);
+
+    void deleteProperty(Long id);
+
+    void deleteAllPropertyByIdLandlord(Long id);
 }

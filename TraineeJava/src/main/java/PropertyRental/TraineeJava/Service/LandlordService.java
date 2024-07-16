@@ -1,14 +1,19 @@
 package PropertyRental.TraineeJava.Service;
 
-import PropertyRental.TraineeJava.Repository.LandlordRepository;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.stereotype.Service;
+import PropertyRental.TraineeJava.Dto.LandlordDto;
 
-@Service
-@RequiredArgsConstructor
-@Slf4j
-public class LandlordService {
+import java.util.List;
 
-    private final LandlordRepository landlordRepository;
+public interface LandlordService {
+    LandlordDto createLandlord(LandlordDto landlordDto);
+
+
+    LandlordDto getLandlordById(Long id);
+
+    List<LandlordDto> getAllLandlord();
+
+    LandlordDto updateLandlord(Long landlordId, LandlordDto landlordDto);
+
+    void deleteLandlord(Long landlordId);
+
 }

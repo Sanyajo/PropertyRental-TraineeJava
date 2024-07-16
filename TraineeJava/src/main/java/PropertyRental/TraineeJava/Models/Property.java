@@ -1,35 +1,33 @@
 package PropertyRental.TraineeJava.Models;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+import lombok.*;
 
 @Entity
+@Getter
+@Setter
 @NoArgsConstructor
-@Data
+@AllArgsConstructor
 @Table(name="property")
 public class Property {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long Id;
+    private Long id;
 
-    @Column(name = "address", nullable = false)
-    private String Address;
+    @Column(name = "address", unique = true)
+    private String address;
 
-    @Column(name = "property_type", nullable = false)
-    private String PropertyType;
+    @Column(name = "property_type")
+    private String propertyType;
 
-    @Column(name = "description", nullable = false)
-    private String Description;
+    @Column(name = "description")
+    private String description;
 
-    @Column(name = "status", nullable = false)
-    private String Status;
+    @Column(name = "status")
+    private String status;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "ladnlord_id")
-    private Landlord LandlordId;
-
+    @JoinColumn(name = "landlord_id")
+    private Landlord landlord;
 }
