@@ -1,0 +1,242 @@
+{
+	"id": "7d175b56-3584-42ae-ad6b-f7b62fcfc6d6",
+	"name": "Test REST AIP",
+	"timestamp": "2024-07-16T17:02:14.559Z",
+	"collection_id": "37001352-03ec51c4-531c-43d1-ba38-f130157f9855",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-16T17:02:14.015Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "3fe5344b-2b55-428d-9736-a8e961119115",
+			"name": "GetAllLandlord",
+			"url": "http://localhost:8085/api/landlord/all",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				25
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "133c2f18-6bb6-43b6-b995-67fbe22b5aaf",
+			"name": "GetLandlord",
+			"url": "http://localhost:8085/api/landlord/get/30",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d7e39b66-fffe-4f07-861a-0d067bc43aea",
+			"name": "UpdateLandlord",
+			"url": "http://localhost:8085/api/landlord/update/31",
+			"time": 7,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				7
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "eea8c415-97f1-4667-bebd-ab9368de3c11",
+			"name": "DeleteLandlord",
+			"url": "http://localhost:8085/api/property/delete/landlord/31",
+			"time": 6,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				6
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e96b8ea4-cf90-4b92-abfd-d659de814c37",
+			"name": "CreateProperty",
+			"url": "http://localhost:8085/api/property/create",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8fa24950-811d-4639-9d5d-11f7e8ed3fb9",
+			"name": "GetAllProperty",
+			"url": "http://localhost:8085/api/property/all",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				27
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3f5987de-65ec-4cbf-a686-c3805520b43c",
+			"name": "GetProperty",
+			"url": "http://localhost:8085/api/property/get/14",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8d5c9a31-e399-4c72-93b9-6f308ecaae7f",
+			"name": "UpdateProperty",
+			"url": "http://localhost:8085/api/property/update/15",
+			"time": 9,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				9
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c9dcc0c7-a740-4b8a-8fd8-324e5c45c316",
+			"name": "DeleteProperty",
+			"url": "http://localhost:8085/api/property/delete/14",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1c330131-4ffd-43aa-b9c6-62ae72214b23",
+			"name": "DeletePropertybyIdLandlord",
+			"url": "http://localhost:8085/api/property/delete/landlord/31",
+			"time": 8,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 111,
+	"collection": {
+		"requests": [
+			{
+				"id": "3fe5344b-2b55-428d-9736-a8e961119115",
+				"method": "GET"
+			},
+			{
+				"id": "133c2f18-6bb6-43b6-b995-67fbe22b5aaf",
+				"method": "GET"
+			},
+			{
+				"id": "d7e39b66-fffe-4f07-861a-0d067bc43aea",
+				"method": "GET"
+			},
+			{
+				"id": "eea8c415-97f1-4667-bebd-ab9368de3c11",
+				"method": "DELETE"
+			},
+			{
+				"id": "e96b8ea4-cf90-4b92-abfd-d659de814c37",
+				"method": "POST"
+			},
+			{
+				"id": "8fa24950-811d-4639-9d5d-11f7e8ed3fb9",
+				"method": "GET"
+			},
+			{
+				"id": "3f5987de-65ec-4cbf-a686-c3805520b43c",
+				"method": "GET"
+			},
+			{
+				"id": "8d5c9a31-e399-4c72-93b9-6f308ecaae7f",
+				"method": "GET"
+			},
+			{
+				"id": "c9dcc0c7-a740-4b8a-8fd8-324e5c45c316",
+				"method": "DELETE"
+			},
+			{
+				"id": "1c330131-4ffd-43aa-b9c6-62ae72214b23",
+				"method": "DELETE"
+			}
+		]
+	}
+}
